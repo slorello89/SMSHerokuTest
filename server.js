@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
  
 app.listen(process.env.PORT || 5000)
 
-app.post('/webhooks/inbound-message', (req, res) => {
+app.get('/webhooks/inbound-message', (req, res) => {
     console.log(req.body);
    
     res.status(200).end();
