@@ -1,5 +1,6 @@
 const app = require('express')()
 const bodyParser = require('body-parser')
+const Nexmo = require('nexmo')
 
 const nexmo = new Nexmo({
   apiKey: process.env.NEXMO_API_KEY,
