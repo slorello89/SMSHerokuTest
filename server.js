@@ -44,5 +44,5 @@ app.post('/webhooks/inbound-message', (req, res) => {
 
   app.post('/webhooks/dlr', (req, res) =>{
     console.log(req.body)
-    req.status(200).end();
+    res.status(200).end();
   })
