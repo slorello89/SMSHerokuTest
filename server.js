@@ -15,3 +15,7 @@ app.post('/webhooks/inbound-message', (req, res) => {
     console.log(req.body)
     res.status(200).end();
   })
+  app.post('/webhooks/insight', (req, res)=>{
+    console.log(req.body)
+    res.status(200).end();
+  });
